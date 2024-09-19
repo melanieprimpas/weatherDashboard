@@ -13,11 +13,11 @@ class City {
 class HistoryService {
   // TODO: Define a read method that reads from the searchHistory.json file
   private async read() {
-    return await fs.readFile('searchHistory.json','utf-8')
+    return await fs.readFile('db/searchHistory.json','utf-8')
   }
   // TODO: Define a write method that writes the updated cities array to the searchHistory.json file
   private async write(cities: City[]) {
-    return await fs.writeFile('searchHistory.json', JSON.stringify(cities, null, '\t'))
+    return await fs.writeFile('db/searchHistory.json', JSON.stringify(cities, null, '\t'))
   }
   // TODO: Define a getCities method that reads the cities from the searchHistory.json file and returns them as an array of City objects
   async getCities() {
