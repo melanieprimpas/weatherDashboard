@@ -139,8 +139,8 @@ class WeatherService {
   // TODO: Build parseCurrentWeather method
   private async parseWeatherData(i: number) {
     const data = await this.fetchWeatherData();
-    //console.log(data, "line 142")
-    //console.log(data.list.length)
+   // console.log(data, "line 142")
+   //console.log(data.list.length)
     try {
 
       const parsedWeather = {
@@ -178,7 +178,7 @@ class WeatherService {
     const data = await this.fetchWeatherData();
 
     // Assuming weatherData contains daily forecasts
-    for (let i = 0; i < data.list.length; i += 7) {
+    for (let i = 0; i < data.list.length+1; i += 7) {
       const weather = await this.parseWeatherData(i);
       if (weather) {
         // Create a forecast object
@@ -205,7 +205,7 @@ class WeatherService {
     const weatherService = new WeatherService(cityName);
     const cityWeather = await weatherService.parseWeatherData(1);
     const forecastArray = await weatherService.buildForecastArray();
-    console.log(forecastArray, "Line 208")
+    //console.log(forecastArray, "Line 208")
     
     if (cityWeather) {
       console.log(`${cityWeather.city}'s Weather Report:`);
