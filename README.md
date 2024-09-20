@@ -8,7 +8,9 @@ This project used the external web API, Open Weather API to collect all of the w
 
 ## Screenshot of Application
 
+![alt text](image.png)
 ## Link to Deployed Application
 
-##
+https://weatherdashboard-l662.onrender.com/
+## Contributors
 Used Xpert Learning Assistant for help with this assignment.

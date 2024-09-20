@@ -80,7 +80,7 @@ Render Functions
 const renderCurrentWeather = (currentWeather: any): void => {
   const { city, date, icon, iconDescription, tempF, windSpeed, humidity } =
     currentWeather;
-    console.log(currentWeather, "Line 82");
+    //console.log(currentWeather, "Line 82");
 
   // convert the following to typescript
   heading.textContent = `${city} (${date})`;
